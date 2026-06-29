@@ -5,6 +5,7 @@ test('test_order @sanity @sanity', async ({ page }) => {
   // Navigate to application
   await page.goto(testData.url);
   await page.waitForLoadState('domcontentloaded');
+  await page.waitForLoadState('domcontentloaded');
 
   // Username
   const usernameInput = page.locator('input[placeholder="Enter your username or email address"]');
